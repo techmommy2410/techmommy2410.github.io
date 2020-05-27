@@ -4,21 +4,61 @@
         <meta charset="UTF-8">
        <title>Hello, I am Cassie Triche</title>
        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    </head>
+       
+       <link ref="shortcut icon" href="favicon.ico"/>
+       <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+       
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+       <link rel="manifest" href="/site.webmanifest"> -->
+      
+      </head>
     <body>
-        <h1>Hello I am Cassie Triche
+     
 
-        </h1>
+        <header>
+          <span class="logo">My WebSite</span>
+          <a id="toggleMenu">Menu<a></a>
         
-        <img style="border-radius: 50%; float: right; margin-right: 1em;" src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="Cassie Triche">
-        <p>I am an IT Professional With 6 Years Experience Specializing In Networking, Computer And Data Support, And QA Testing. I am an aspiring DevOps Engineer. I am ambitious and career driven. I am a life-long learner.</p>
-        <nav>
+          <nav>
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="resume.html">Resume</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </nav>
-          <img style="border-radius: 50%; float: right; margin-right: 1em;">
-    </body>
+        </header>
+
+        <main>
+          <h1>Hello I am Cassie Triche
+          
+          </h1>
+          
+          <img  class="avatar" src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="Cassie Triche">
+          <p>I am an IT Professional With 6 Years Experience Specializing In Networking, Computer And Data Support, And QA Testing. I am an aspiring DevOps Engineer. I am ambitious and career driven. I am a life-long learner.</p>
+         
+          </main>
+
+        
+          
+          <script>
+
+            var toggleMenu = document.getElementById('toggleMenu');
+            var nav = document.querySelector('nav');
+
+            toggleMenu.addEventListener('click'),
+              function(){
+                if(nav.style.display=='block'){
+                  nav.style.display='none';
+                }else{
+                  nav.style.display='block';
+                }
+              }
+            ;
+          </script>
+    
+        </body>
 </html>
+
